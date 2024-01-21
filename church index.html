@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      #confirmationMessage {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #dff0d8;
+        border: 1px solid #d6e9c6;
+        border-radius: 5px;
+        display: none;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REPI FULL GOSPEL CHURCH</title>
+    <link rel="stylesheet" href="church.css" />
+    <script src="church3.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="header-container">
+        <h1>REPI FULL GOSPEL CHURCH</h1>
+
+        <header>
+          <div class="header-container">
+            <img src="churchlogo.jpg" alt="Church Logo" class="logo" />
+
+            <!-- ... (navigation code remains unchanged) ... -->
+          </div>
+        </header>
+
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sermons">Sermons</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <section id="home">
+        <h2>Welcome to REPI FULL GOSPEL CHURCH</h2>
+        <p>እየሱስ ክርስቶስ ትናንትናም ዛሬ እስከ ለዘላለምም ያው ነው፡፡ ወደ ዕብራውያን 13፡8</p>
+      </section>
+      <section id="about"></section>
+      <section id="sermons"></section>
+      <section id="events"></section>
+      <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you. Fill out the form below:</p>
+
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div id="confirmationMessage" style="display: none">
+          <p>Thank you for reaching out! We'll get back to you soon.</p>
+        </div>
+      </section>
+      <script>
+        function submitForm(event) {
+          event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+          // You can add your form processing logic here
+          // For now, let's display a confirmation message
+          document.getElementById("contactForm").style.display = "none";
+          document.getElementById("confirmationMessage").style.display =
+            "block";
+        }
+      </script>
+      <!-- Add more sections as needed -->
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 REPI FULL GOSPEL CHURCH. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+  </body>
+</html>

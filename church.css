@@ -1,0 +1,61 @@
+body {
+    font-family: 'Playfair Display', serif; /* Use a classy font like Playfair Display */
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* White text color */
+    margin: 0;
+}
+
+header {
+    background-color: #333; /* Dark background color for the header */
+    color: #ffd700; /* Gold text color for the header */
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffd700; /* Gold link color */
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #daa520; /* Darker gold on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #333; /* Dark background for sections */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Subtle box shadow */
+}
+
+footer {
+    background-color: #1a1a1a; /* Dark background color for the footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Additional styles as needed */
